@@ -18,10 +18,25 @@ const Skills: React.FC = () => {
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-          <div className="w-full">
+        <div className="w-full">
             <Image
-              src={web}
-              alt="Skill 1"
+              src={webmgt}
+              alt="Skill 5"
+              width={1200}
+              height={800}
+              className="w-full h-72 object-cover rounded-lg shadow-md"
+            />
+            <div className="text-center mt-12">
+              <h1 className="text-xl font-bold text-bl animate-wave">
+                Web Development
+              </h1>
+            </div>
+          </div>
+        
+        <div className="w-full">
+            <Image
+              src={graphic}
+              alt="Skill 6"
               width={1200}
               height={800}
               className="w-full h-72 object-cover rounded-lg shadow-md"
@@ -30,7 +45,7 @@ const Skills: React.FC = () => {
             <a 
                 href="/graphics">
               <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Web Design
+                Graphic Design
               </h1>
               </a>
             </div>
@@ -52,6 +67,25 @@ const Skills: React.FC = () => {
               </a>
             </div>
           </div>
+          <div className="w-full">
+            <Image
+              src={web}
+              alt="Skill 1"
+              width={1200}
+              height={800}
+              className="w-full h-72 object-cover rounded-lg shadow-md"
+            />
+            
+            <div className="text-center mt-12">
+            <a 
+                href="/graphics">
+              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
+                Web Design
+              </h1>
+              </a>
+            </div>
+          </div>
+         
           <div className="w-full">
             <Image
               src={socials}
@@ -80,37 +114,7 @@ const Skills: React.FC = () => {
               </h1>
             </div>
           </div>
-          <div className="w-full">
-            <Image
-              src={webmgt}
-              alt="Skill 5"
-              width={1200}
-              height={800}
-              className="w-full h-72 object-cover rounded-lg shadow-md"
-            />
-            <div className="text-center mt-12">
-              <h1 className="text-xl font-bold text-bl animate-wave">
-                Web Development
-              </h1>
-            </div>
-          </div>
-          <div className="w-full">
-            <Image
-              src={graphic}
-              alt="Skill 6"
-              width={1200}
-              height={800}
-              className="w-full h-72 object-cover rounded-lg shadow-md"
-            />
-            <div className="text-center mt-12">
-            <a 
-                href="/graphics">
-              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Graphic Design
-              </h1>
-              </a>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

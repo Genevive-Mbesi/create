@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-4">
             <a
-              href="#"
+              href="/"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
