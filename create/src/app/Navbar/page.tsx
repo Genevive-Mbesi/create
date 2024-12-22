@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Skills from "../Skills/page";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar: React.FC = () => {
               Home
             </a>
             <a
-              href="#"
+              href="/Skills"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
             >
               Skills
