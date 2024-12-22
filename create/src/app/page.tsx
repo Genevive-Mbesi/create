@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image"; 
 import cover from "@/components/Images/cover.jpg";
+import Navbar from "./Navbar/page";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
+      <Navbar/>
       <Image
         src={cover}
         alt="Cover image"
