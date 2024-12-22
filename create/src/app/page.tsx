@@ -16,7 +16,7 @@ export default function Home() {
         priority
         className="z-[-1]"
       />
-  {/* Animated "Creative Portfolio" Text */}
+ 
   <div className="text-center mt-12">
         <h1 className="text-5xl font-bold text-white animate-wave">Creative Portfolio</h1>
       </div>
