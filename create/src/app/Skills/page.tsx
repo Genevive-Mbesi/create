@@ -44,9 +44,12 @@ const Skills: React.FC = () => {
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />
             <div className="text-center mt-12">
-              <h1 className="text-xl font-bold text-bl animate-wave">
+            <a 
+                href="/videography">
+              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
                 Videography
               </h1>
+              </a>
             </div>
           </div>
           <div className="w-full">
