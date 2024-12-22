@@ -7,6 +7,7 @@ import seo from "@/components/Images/seo.jpg";
 import webmgt from "@/components/Images/webmgt.jpg";
 import graphic from "@/components/Images/graphic.jpg";
 
+
 const Skills: React.FC = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">

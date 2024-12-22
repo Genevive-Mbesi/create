@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
 import Navbar from "./Navbar/page";
-
+import Skills from "./Skills/page";
 
 export default function Home() {
   return (
@@ -50,6 +50,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
+      <Skills/>
     </div>
   );
 }
