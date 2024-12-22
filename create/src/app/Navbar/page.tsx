@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
@@ -9,23 +9,23 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-          <a href="#" aria-label="Home">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="w-8 h-8 text-black"
-    >
-      <path d="M12 21a9 9 0 1 1 8.84-7.09 3.5 3.5 0 0 1-4.3 4.29c-.99-.12-2.02.18-2.52.69A3 3 0 0 1 12 21Z" />
-      <circle cx="7.5" cy="10.5" r="1" />
-      <circle cx="12" cy="7.5" r="1" />
-      <circle cx="16.5" cy="10.5" r="1" />
-    </svg>
-  </a>
+            <a href="#" aria-label="Home">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-8 h-8 text-black"
+              >
+                <path d="M12 21a9 9 0 1 1 8.84-7.09 3.5 3.5 0 0 1-4.3 4.29c-.99-.12-2.02.18-2.52.69A3 3 0 0 1 12 21Z" />
+                <circle cx="7.5" cy="10.5" r="1" />
+                <circle cx="12" cy="7.5" r="1" />
+                <circle cx="16.5" cy="10.5" r="1" />
+              </svg>
+            </a>
           </div>
 
           {/* Navigation Links */}
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
               href="#"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
             >
-              About
+              Skills
             </a>
             <a
               href="#"
@@ -94,13 +94,13 @@ const Navbar: React.FC = () => {
             href="#"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
-            About
+            Skills
           </a>
           <a
             href="#"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
-            Services
+            Projects
           </a>
           <a
             href="#"
