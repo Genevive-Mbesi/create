@@ -1,12 +1,59 @@
-import React from "react";
+'use client';
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
+import React, { useState } from "react";
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setResponseMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setResponseMessage("Thank you for your message! We'll get back to you soon.");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setResponseMessage("Something went wrong. Please try again.");
+      }
+    } catch {
+      setResponseMessage("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b  flex items-center justify-center p-6">
+    <div>
+    <div className="min-h-screen  flex items-center justify-center p-6 relative">
       <Image
         src={cover}
         alt="Cover image"
@@ -14,72 +61,78 @@ const Contact: React.FC = () => {
         objectFit="cover"
         objectPosition="center"
         priority
-        className="z-[-1]"
+        className="absolute top-0 left-0 z-[-1] "
       />
-      <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="max-w-2xl  bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="grid md:grid-cols-2">
           {/* Contact Form */}
-          <div className="p-6 space-y-6">
-            <h2 className="text-3xl font-bold text-neutral-950">
-              Get in Touch
-            </h2>
+          <div className="p-8 space-y-6">
+            <h2 className="text-3xl font-bold text-neutral-950">Get in Touch</h2>
             <p className="text-gray-600">Fill out the form below</p>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
-                <label className="block text-sm font-semibold text-gray-700">
-                  Name
-                </label>
+                <label className="block text-sm font-semibold text-gray-700">Name</label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-400 focus:outline-none"
+                  required
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-700">
-                  Email
-                </label>
+                <label className="block text-sm font-semibold text-gray-700">Email</label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-950 focus:outline-none"
+                  required
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-700">
-                  Subject
-                </label>
+                <label className="block text-sm font-semibold text-gray-700">Subject</label>
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-950 focus:outline-none"
+                  required
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-700">
-                  Message
-                </label>
+                <label className="block text-sm font-semibold text-gray-700">Message</label>
                 <textarea
+                  name="message"
                   placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-400 focus:outline-none"
                   rows={4}
+                  required
                 ></textarea>
               </div>
               <button
                 type="submit"
                 className="w-full bg-neutral-950 text-white font-bold py-2 px-4 rounded-md hover:bg-neutral-400 transition duration-200"
+                disabled={isSubmitting}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
+            {responseMessage && <p className="mt-4 text-gray-700">{responseMessage}</p>}
           </div>
 
-          {/* Contact Info */}
-          <div className="bg-neutral-950 text-white p-6 space-y-6">
+          {/* Contact Information */}
+          <div className="bg-neutral-950 text-white p-8 space-y-6">
             <h3 className="text-2xl font-bold">Contact Information</h3>
-            <p className="text-neutral-200">
-              Feel free to reach out via any of the methods below:
-            </p>
+            <p className="text-neutral-200">Feel free to reach out via any of the methods below:</p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <a href="mailto:genmbesi@gmail.com">
@@ -110,6 +163,8 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className="w-full bg-white h-12"></div>
     </div>
   );
 };

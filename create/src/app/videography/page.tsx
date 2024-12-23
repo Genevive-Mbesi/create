@@ -16,7 +16,6 @@ const VideoDisplay: React.FC = () => {
     </div>
     <div className="w-full bg-white h-12"></div>
     </div>
-    
   );
   
 };
