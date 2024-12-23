@@ -43,12 +43,7 @@ const Navbar: React.FC = () => {
             >
               Skills
             </a>
-            <a
-              href="#"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Projects
-            </a>
+           
             <a
               href="#"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
@@ -86,7 +81,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-50">
           <a
-            href="#"
+            href="/"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
             Home
@@ -97,14 +92,9 @@ const Navbar: React.FC = () => {
           >
             Skills
           </a>
+          
           <a
-            href="#"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
-          >
-            Projects
-          </a>
-          <a
-            href="#"
+            href="/Skills"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
             Contact
