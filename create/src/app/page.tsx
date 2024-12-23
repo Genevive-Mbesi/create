@@ -3,6 +3,7 @@ import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
 import Skills from "./Skills/page";
 
+
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
@@ -26,8 +27,8 @@ export default function Home() {
           <p className="text-white text-left">
             Hello there!
             <br />
-            I am<span className ='font-bold'> Genevive Mbesi</span>, a creative with an eye for turning ideas into a
-            visually appealing reality,
+            I am<span className ='font-bold'> Genevive Mbesi</span>, a creative professional with an eye for turning ideas into a
+            visually captivating,
             <br />
             prepare for a whole lot of flair and creativity packed into every
             project I take.

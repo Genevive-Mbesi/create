@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineMail,  AiOutlineWhatsApp } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
@@ -85,12 +85,16 @@ const Contact: React.FC = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <AiOutlineMail className="text-2xl" />
-                <span>genmbesi@gmail.com</span>
+                <a href='mailto:genmbesi@gmail.com'>
+            <AiOutlineMail className="text-2xl hover:text-neutral-400"/>
+          </a><span>Mail box</span>
               </div>
               <div className="flex items-center space-x-3">
-                <AiOutlinePhone className="text-2xl" />
-                <span>+254745052800</span>
+
+                <a href='https://wa.me/+254770209753' target='_blank' rel='noreferrer'>
+            <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400"/>
+          </a>
+          <span>Contact</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-2xl" />
