@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a
               href="https://github.com/Genevive-Mbesi"
-              className="hover:text-teal-400"
+              className="hover:text-neutral-400"
             >
               <svg
                 className="h-6 w-6"

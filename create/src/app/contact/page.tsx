@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-400 focus:outline-none"
                 />
               </div>
               <div>
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-teal-950 focus:outline-none"
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-950 focus:outline-none"
                 />
               </div>
               <div>
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                 </label>
                 <textarea
                   placeholder="Your Message"
-                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                  className="w-full mt-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-neutral-400 focus:outline-none"
                   rows={4}
                 ></textarea>
               </div>
