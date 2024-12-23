@@ -3,11 +3,11 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
-import Navbar from "../Navbar/page";
+
 
 const Contact: React.FC = () => {
   return (
-    <div><Navbar/>
+    
     <div className="min-h-screen bg-gradient-to-b  flex items-center justify-center p-6">
         
          <Image
@@ -86,27 +86,27 @@ const Contact: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <AiOutlineMail className="text-2xl" />
-                <span>email@example.com</span>
+                <span>genmbesi@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <AiOutlinePhone className="text-2xl" />
-                <span>+123 456 7890</span>
+                <span>+254745052800</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-2xl" />
-                <span>123 Main Street, City, Country</span>
+                <span>Nairobi, Kenya</span>
               </div>
             </div>
             <div className="mt-6">
               <h4 className="text-xl font-bold">Business Hours</h4>
               <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p>Saturday: 10:00 AM - 2:00 PM</p>
+              <p>Saturday: 10:00 AM - 12:00 PM</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+    
   );
 };
 

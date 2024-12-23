@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,9 +42,9 @@ const Navbar: React.FC = () => {
             >
               Skills
             </a>
-           
+
             <a
-              href="#"
+              href="/contact"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact
@@ -87,14 +86,14 @@ const Navbar: React.FC = () => {
             Home
           </a>
           <a
-            href="#"
+            href="/Skills"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
             Skills
           </a>
-          
+
           <a
-            href="/Skills"
+            href="/contact"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
           >
             Contact

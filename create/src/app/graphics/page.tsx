@@ -9,12 +9,11 @@ import wall from "@/components/Images/Wall Art Photo Pricing Menu List Frame.png
 import yellow from "@/components/Images/Yellow & Brown 3D We Are Hiring Poster.jpg";
 import mbesi from "@/components/Images/Genevive Mbesi-logos_black.png";
 import genny from "@/components/Images/Genevive Mbesi-logos.jpg";
-import Navbar from "../Navbar/page";
+
 
 const Graphics: React.FC = () => {
   return (
-    <div>
-      <Navbar />
+   
       <div className="bg-neutral-950 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold text-stone-100 mb-4">
@@ -126,7 +125,7 @@ const Graphics: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

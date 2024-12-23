@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
-import Navbar from "./Navbar/page";
 import Skills from "./Skills/page";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
-      <Navbar />
       <Image
         src={cover}
         alt="Cover image"
@@ -18,7 +16,7 @@ export default function Home() {
         className="z-[-1]"
       />
  
-  <div className="pl-12 mt-12">
+  <div className="pl-12 pt-12">
         <h1 className="text-5xl font-bold text-white animate-wave">Creative Portfolio</h1>
       </div>
       <div className="relative z-10 flex  text-3xl flex-col pt-14 pl-12 min-h-screen">

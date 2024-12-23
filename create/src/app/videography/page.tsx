@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "../Navbar/page";
+
 
 const VideoDisplay: React.FC = () => {
   return (
-    <div>
-      <Navbar />
+   
       <div className="bg-neutral-950 min-h-screen flex items-center justify-center py-10 px-4">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">
@@ -16,7 +15,7 @@ const VideoDisplay: React.FC = () => {
           </video>
         </div>
       </div>
-    </div>
+   
   );
 };
 

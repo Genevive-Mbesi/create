@@ -6,7 +6,7 @@ import portfolio from "@/components/Images/Portfolio.jpeg";
 import creative from "@/components/Images/creative.jpeg";
 import commerce from "@/components/Images/commerce.jpeg";
 import { AiFillGithub } from "react-icons/ai";
-import Navbar from "../Navbar/page";
+
 
 const projects = [
   {
@@ -64,8 +64,7 @@ const projects = [
 
 const Web: React.FC = () => {
   return (
-    <div>
-      <Navbar/>
+   
     <div className="min-h-screen flex items-center justify-center bg-black text-white">
       <div className="sections-container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {projects.map((project) => (
@@ -111,7 +110,7 @@ const Web: React.FC = () => {
         ))}
       </div>
     </div>
-</div>
+
   );
 };
 
