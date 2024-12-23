@@ -3,7 +3,6 @@ import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
 import Skills from "./Skills/page";
 
-
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
@@ -16,19 +15,19 @@ export default function Home() {
         priority
         className="z-[-1]"
       />
- 
-  <div className="pl-12 pt-12">
-        <h1 className="text-5xl font-bold text-white animate-wave">Creative Portfolio</h1>
+
+      <div className="pl-12 pt-12">
+        <h1 className="text-5xl font-bold text-white animate-wave">
+          Creative Portfolio
+        </h1>
       </div>
       <div className="relative z-10 flex  text-3xl flex-col pt-14 pl-12 min-h-screen">
-        
         <div className=" rounded-lg shadow-lg p-6 max-w-md w-full animate-fade-in">
-          
           <p className="text-white text-left">
             Hello there!
-            <br />
-            I am<span className ='font-bold'> Genevive Mbesi</span>, a creative professional with an eye for turning ideas into a
-            visually captivating,
+            <br />I am<span className="font-bold"> Genevive Mbesi</span>, a
+            creative professional with an eye for turning ideas into a visually
+            captivating,
             <br />
             prepare for a whole lot of flair and creativity packed into every
             project I take.
@@ -48,7 +47,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <Skills/>
+      <Skills />
     </div>
   );
 }

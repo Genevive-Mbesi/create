@@ -7,7 +7,6 @@ import seo from "@/components/Images/seo.jpg";
 import webmgt from "@/components/Images/webmgt.jpg";
 import graphic from "@/components/Images/graphic.jpg";
 
-
 const Skills: React.FC = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -18,7 +17,7 @@ const Skills: React.FC = () => {
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-        <div className="w-full">
+          <div className="w-full">
             <Image
               src={webmgt}
               alt="Skill 5"
@@ -27,16 +26,15 @@ const Skills: React.FC = () => {
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />
             <div className="text-center mt-12">
-            <a 
-                href="/webdev">
-              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Web Development
-              </h1>
+              <a href="/webdev">
+                <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
+                  Web Development
+                </h1>
               </a>
             </div>
           </div>
-        
-        <div className="w-full">
+
+          <div className="w-full">
             <Image
               src={graphic}
               alt="Skill 6"
@@ -45,11 +43,10 @@ const Skills: React.FC = () => {
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />
             <div className="text-center mt-12">
-            <a 
-                href="/graphics">
-              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Graphic Design
-              </h1>
+              <a href="/graphics">
+                <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
+                  Graphic Design
+                </h1>
               </a>
             </div>
           </div>
@@ -62,11 +59,10 @@ const Skills: React.FC = () => {
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />
             <div className="text-center mt-12">
-            <a 
-                href="/videography">
-              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Videography
-              </h1>
+              <a href="/videography">
+                <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
+                  Videography
+                </h1>
               </a>
             </div>
           </div>
@@ -78,17 +74,16 @@ const Skills: React.FC = () => {
               height={800}
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />
-            
+
             <div className="text-center mt-12">
-            <a 
-                href="/graphics">
-              <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
-                Web Design
-              </h1>
+              <a href="/graphics">
+                <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
+                  Web Design
+                </h1>
               </a>
             </div>
           </div>
-         
+
           <div className="w-full">
             <Image
               src={socials}
@@ -117,7 +112,6 @@ const Skills: React.FC = () => {
               </h1>
             </div>
           </div>
-         
         </div>
       </div>
     </div>

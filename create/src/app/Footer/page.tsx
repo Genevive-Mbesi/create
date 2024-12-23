@@ -1,25 +1,25 @@
 import React from "react";
-import { AiOutlineMail,  AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-neutral-950 text-gray-300 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* About Section */}
           <div>
             <h2 className="text-xl font-semibold text-white mb-4">About Me</h2>
             <p className="text-sm">
-              I am Genevive Mbesi, a creative professional specializing in turning ideas into visually captivating designs. Collaborate with me to bring your vision to life!
-              This Portfolio is built entirely on my expertise from the design to the last line of code.
+              I am Genevive Mbesi, a creative professional specializing in
+              turning ideas into visually captivating designs. Collaborate with
+              me to bring your vision to life! This Portfolio is built entirely
+              on my expertise from the design to the last line of code.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div>
-            <h2 className="text-xl font-semibold text-white mb-4">Quick Links</h2>
+            <h2 className="text-xl font-semibold text-white mb-4">
+              Quick Links
+            </h2>
             <ul>
               <li className="mb-2">
                 <a href="/" className="hover:text-neutral-400">
@@ -36,7 +36,6 @@ export default function Footer() {
                   Contact
                 </a>
               </li>
-        
             </ul>
           </div>
 
@@ -44,24 +43,27 @@ export default function Footer() {
           <div>
             <h2 className="text-xl font-semibold text-white mb-4">Contact</h2>
             <div className="space-y-4">
-                        <div className="flex items-center space-x-3">
-                          <a href='mailto:genmbesi@gmail.com'>
-                      <AiOutlineMail className="text-2xl hover:text-neutral-400 "/>
-                    </a><span>Mail</span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-          
-                          <a href='https://wa.me/+254770209753' target='_blank' rel='noreferrer '>
-                      <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400"/>
-                    </a>
-                    <span>Contact</span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <FaMapMarkerAlt className="text-2xl hover:text-neutral-400" />
-                          <span>Nairobi, Kenya</span>
-                        </div>
-                      </div>
-
+              <div className="flex items-center space-x-3">
+                <a href="mailto:genmbesi@gmail.com">
+                  <AiOutlineMail className="text-2xl hover:text-neutral-400 " />
+                </a>
+                <span>Mail</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <a
+                  href="https://wa.me/+254770209753"
+                  target="_blank"
+                  rel="noreferrer "
+                >
+                  <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400" />
+                </a>
+                <span>Contact</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <FaMapMarkerAlt className="text-2xl hover:text-neutral-400" />
+                <span>Nairobi, Kenya</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -71,19 +73,24 @@ export default function Footer() {
         {/* Social Media & Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-4">
           <div className="flex space-x-4">
-            <a href="https://github.com/Genevive-Mbesi" className="hover:text-teal-400">
+            <a
+              href="https://github.com/Genevive-Mbesi"
+              className="hover:text-teal-400"
+            >
               <svg
                 className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-               <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.799 8.205 11.396.6.111.82-.26.82-.577v-2.189c-3.338.725-4.039-1.514-4.039-1.514-.548-1.397-1.338-1.77-1.338-1.77-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.244 1.84 1.244 1.07 1.831 2.809 1.3 3.494.996.108-.774.419-1.3.762-1.599-2.669-.303-5.467-1.335-5.467-5.93 0-1.309.47-2.381 1.24-3.219-.124-.303-.536-1.524.117-3.168 0 0 1.008-.324 3.29 1.24.957-.266 1.979-.4 2.999-.405 1.02.005 2.042.14 2.998.405 2.282-1.565 3.29-1.24 3.29-1.24.653 1.644.241 2.865.117 3.168.771.838 1.24 1.91 1.24 3.219 0 4.607-2.799 5.626-5.471 5.92.428.369.818 1.099.818 2.22v3.28c0 .318.218.694.82.577 4.768-1.597 8.205-6.093 8.205-11.396 0-6.627-5.373-12-12-12z"/>
-
+                <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.799 8.205 11.396.6.111.82-.26.82-.577v-2.189c-3.338.725-4.039-1.514-4.039-1.514-.548-1.397-1.338-1.77-1.338-1.77-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.244 1.84 1.244 1.07 1.831 2.809 1.3 3.494.996.108-.774.419-1.3.762-1.599-2.669-.303-5.467-1.335-5.467-5.93 0-1.309.47-2.381 1.24-3.219-.124-.303-.536-1.524.117-3.168 0 0 1.008-.324 3.29 1.24.957-.266 1.979-.4 2.999-.405 1.02.005 2.042.14 2.998.405 2.282-1.565 3.29-1.24 3.29-1.24.653 1.644.241 2.865.117 3.168.771.838 1.24 1.91 1.24 3.219 0 4.607-2.799 5.626-5.471 5.92.428.369.818 1.099.818 2.22v3.28c0 .318.218.694.82.577 4.768-1.597 8.205-6.093 8.205-11.396 0-6.627-5.373-12-12-12z" />
               </svg>
             </a>
-            
-            <a href="https://www.linkedin.com/in/genevive-mbesi-5a5a98224" className="hover:text-neutral-400">
+
+            <a
+              href="https://www.linkedin.com/in/genevive-mbesi-5a5a98224"
+              className="hover:text-neutral-400"
+            >
               <svg
                 className="h-6 w-6"
                 fill="currentColor"
@@ -94,7 +101,9 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <p className="text-sm mt-4 md:mt-0">&copy; 2025 Genevive Mbesi. All Rights Reserved.</p>
+          <p className="text-sm mt-4 md:mt-0">
+            &copy; 2025 Genevive Mbesi. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

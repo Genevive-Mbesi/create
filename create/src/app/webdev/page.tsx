@@ -7,7 +7,6 @@ import creative from "@/components/Images/creative.jpeg";
 import commerce from "@/components/Images/commerce.jpeg";
 import { AiFillGithub } from "react-icons/ai";
 
-
 const projects = [
   {
     id: 1,
@@ -62,11 +61,9 @@ const projects = [
   },
 ];
 
-
 const Web: React.FC = () => {
   return (
-   
-    <div className="min-h-screen flex items-center justify-center bg-black text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
       <div className="sections-container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {projects.map((project) => (
           <div key={project.id} className="card-container">
@@ -83,7 +80,11 @@ const Web: React.FC = () => {
               <div className="card-body p-6 space-y-4">
                 <h2 className="card-title text-2xl font-bold flex justify-between items-center">
                   {project.title}
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillGithub className="text-3xl hover:text-gray-700" />
                   </a>
                 </h2>
@@ -110,9 +111,8 @@ const Web: React.FC = () => {
           </div>
         ))}
       </div>
-      
+      <div className="w-full bg-white h-12"></div>
     </div>
-    
   );
 };
 

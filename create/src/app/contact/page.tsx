@@ -1,16 +1,13 @@
 import React from "react";
-import { AiOutlineMail,  AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
 
-
 const Contact: React.FC = () => {
   return (
-    
     <div className="min-h-screen bg-gradient-to-b  flex items-center justify-center p-6">
-        
-         <Image
+      <Image
         src={cover}
         alt="Cover image"
         layout="fill"
@@ -23,10 +20,10 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2">
           {/* Contact Form */}
           <div className="p-6 space-y-6">
-            <h2 className="text-3xl font-bold text-neutral-950">Get in Touch</h2>
-            <p className="text-gray-600">
-              Fill out the form below
-            </p>
+            <h2 className="text-3xl font-bold text-neutral-950">
+              Get in Touch
+            </h2>
+            <p className="text-gray-600">Fill out the form below</p>
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-gray-700">
@@ -85,16 +82,20 @@ const Contact: React.FC = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <a href='mailto:genmbesi@gmail.com'>
-            <AiOutlineMail className="text-2xl hover:text-neutral-400"/>
-          </a><span>Mail box</span>
+                <a href="mailto:genmbesi@gmail.com">
+                  <AiOutlineMail className="text-2xl hover:text-neutral-400" />
+                </a>
+                <span>Mail box</span>
               </div>
               <div className="flex items-center space-x-3">
-
-                <a href='https://wa.me/+254770209753' target='_blank' rel='noreferrer'>
-            <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400"/>
-          </a>
-          <span>Contact</span>
+                <a
+                  href="https://wa.me/+254770209753"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400" />
+                </a>
+                <span>Contact</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-2xl" />
@@ -110,7 +111,6 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
