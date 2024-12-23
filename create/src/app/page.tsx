@@ -18,15 +18,14 @@ export default function Home() {
         className="z-[-1]"
       />
  
-  <div className="text-center mt-12">
+  <div className="pl-12 mt-12">
         <h1 className="text-5xl font-bold text-white animate-wave">Creative Portfolio</h1>
       </div>
-      <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen">
+      <div className="relative z-10 flex  text-3xl flex-col pt-14 pl-12 min-h-screen">
         
-        <div className="bg-white rounded-lg shadow-lg p-6 max-w-md w-full animate-fade-in">
+        <div className=" rounded-lg shadow-lg p-6 max-w-md w-full animate-fade-in">
           
-          <h2 className="text-2xl font-bold mb-4 text-left">Get to know me </h2>
-          <p className="text-gray-700 text-left">
+          <p className="text-white text-left">
             Hello there!
             <br />
             I am<span className ='font-bold'> Genevive Mbesi</span>, a creative with an eye for turning ideas into a
