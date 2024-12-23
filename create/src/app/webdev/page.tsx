@@ -62,6 +62,7 @@ const projects = [
   },
 ];
 
+
 const Web: React.FC = () => {
   return (
    
@@ -109,8 +110,9 @@ const Web: React.FC = () => {
           </div>
         ))}
       </div>
+      
     </div>
-
+    
   );
 };
 
