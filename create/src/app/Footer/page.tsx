@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"; // Import Link component
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -17,24 +18,22 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-white mb-4">
-              Quick Links
-            </h2>
+            <h2 className="text-xl font-semibold text-white mb-4">Quick Links</h2>
             <ul>
               <li className="mb-2">
-                <a href="/" className="hover:text-neutral-400">
+                <Link href="/" className="hover:text-neutral-400">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="/Skills" className="hover:text-neutral-400">
+                <Link href="/Skills" className="hover:text-neutral-400">
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="/contact" className="hover:text-neutral-400">
+                <Link href="/contact" className="hover:text-neutral-400">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

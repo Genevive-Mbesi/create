@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +9,9 @@ const Navbar: React.FC = () => {
     <nav className="bg-white text-black border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" aria-label="Home">
+            <Link href="/" aria-label="Home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -25,30 +27,32 @@ const Navbar: React.FC = () => {
                 <circle cx="12" cy="7.5" r="1" />
                 <circle cx="16.5" cy="10.5" r="1" />
               </svg>
-            </a>
+            </Link>
           </div>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-4">
-            <a
+            <Link
               href="/"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              aria-label="Navigate to Home"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/Skills"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              aria-label="View Projects"
             >
               Projects
-            </a>
-
-            <a
+            </Link>
+            <Link
               href="/contact"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              aria-label="Contact Page"
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -56,6 +60,7 @@ const Navbar: React.FC = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black focus:outline-none"
+              aria-label="Toggle menu"
             >
               <svg
                 className="w-6 h-6"
@@ -79,25 +84,27 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-50">
-          <a
+          <Link
             href="/"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            aria-label="Navigate to Home"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Skills"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            aria-label="View Projects"
           >
             Projects
-          </a>
-
-          <a
+          </Link>
+          <Link
             href="/contact"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            aria-label="Contact Page"
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>
