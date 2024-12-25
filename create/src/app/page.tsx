@@ -29,7 +29,7 @@ export default function Home() {
             creative professional with an eye for turning ideas into a visually
             captivating,
             <br />
-            prepare for a whole lot of flair and creativity packed into every
+            expect a whole lot of flair and creativity packed into every
             project I take.
           </p>
         </div>
