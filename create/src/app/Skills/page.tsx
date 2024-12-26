@@ -19,13 +19,13 @@ const Skills: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           <div className="w-full">
             <a href="/webdev">
-            <Image
-              src={webmgt}
-              alt="Skill 5"
-              width={1200}
-              height={800}
-              className="w-full h-72 object-cover rounded-lg shadow-md"
-            />
+              <Image
+                src={webmgt}
+                alt="Skill 5"
+                width={1200}
+                height={800}
+                className="w-full h-72 object-cover rounded-lg shadow-md"
+              />
             </a>
             <div className="text-center mt-12">
               <a href="/webdev">
@@ -37,15 +37,15 @@ const Skills: React.FC = () => {
           </div>
 
           <div className="w-full">
-          <a href="/graphics">
-            <Image
-              src={graphic}
-              alt="Skill 6"
-              width={1200}
-              height={800}
-              className="w-full h-72 object-cover rounded-lg shadow-md"
-            />
-             </a>
+            <a href="/graphics">
+              <Image
+                src={graphic}
+                alt="Skill 6"
+                width={1200}
+                height={800}
+                className="w-full h-72 object-cover rounded-lg shadow-md"
+              />
+            </a>
             <div className="text-center mt-12">
               <a href="/graphics">
                 <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
@@ -55,15 +55,15 @@ const Skills: React.FC = () => {
             </div>
           </div>
           <div className="w-full">
-          <a href="/videography">
-            <Image
-              src={video}
-              alt="Skill 2"
-              width={1200}
-              height={800}
-              className="w-full h-72 object-cover rounded-lg shadow-md"
-            />
-             </a>
+            <a href="/videography">
+              <Image
+                src={video}
+                alt="Skill 2"
+                width={1200}
+                height={800}
+                className="w-full h-72 object-cover rounded-lg shadow-md"
+              />
+            </a>
             <div className="text-center mt-12">
               <a href="/videography">
                 <h1 className="hover:bg-gray-100 text-xl font-bold text-bl animate-wave">
