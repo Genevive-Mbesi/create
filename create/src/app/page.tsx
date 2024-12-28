@@ -27,9 +27,7 @@ export default function Home() {
             Hello there!
             <br />I am<span className="font-bold"> Genevive Mbesi</span>, a
             creative professional with an eye for turning ideas into visually
-            captivating designs.
-            <br />
-            expect a whole lot of flair and creativity packed into every
+            captivating designs, expect a whole lot of flair and creativity packed into every
             project I take.
           </p>
         </div>
