@@ -1,22 +1,17 @@
-import React from "react";
-import Image from "next/image";
+import React, { Suspense } from "react";
 import cover from "@/components/Images/cover.jpg";
-import Skills from "./Skills/page";
+
+const Skills = React.lazy(() => import("./Skills/page"));
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full bg-black">
-      {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full">
-        <Image
-          src={cover}
-          alt="Cover image"
-          fill
-          priority
-          loading="eager"  
-          className="object-cover object-center opacity-60 pointer-events-none"
-        />
-      </div>
+      {/* Background Image using CSS */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-60 pointer-events-none"
+        style={{ backgroundImage: `url(${cover.src})` }} 
+      ></div>
+
       {/* Content Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6 backdrop-blur-sm">
         <h1 className="text-6xl font-extrabold text-white drop-shadow-lg animate-fade-in">
@@ -28,10 +23,14 @@ export default function Home() {
           Expect a blend of flair and creativity in every project I take on.
         </p>
       </div>
+
       {/* Skills Section */}
       <div className="relative z-10 py-16">
         <div className="container mx-auto px-6">
-          <Skills />
+          {/* Suspense for Lazy Loading Skills */}
+          <Suspense fallback={<div className="text-white text-center">Loading Skills...</div>}>
+            <Skills />
+          </Suspense>
         </div>
       </div>
     </div>
