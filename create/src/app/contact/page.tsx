@@ -62,7 +62,8 @@ const Contact: React.FC = () => {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        priority
+        priority 
+        loading="eager"  
         className="absolute top-0 left-0 z-[-1] "
       />
       <Slide>
