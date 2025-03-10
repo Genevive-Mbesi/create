@@ -6,9 +6,9 @@ import two from "@/components/Images/2.jpg";
 import orange from "@/components/Images/Orange and Black Simple Real Estate For Sale Poster.jpg";
 import screen from "@/components/Images/Screenshot 2024-11-19 213303.png";
 import screenshot from "@/components/Images/Screenshot 2024-11-19 213322.png";
-import wall from "@/components/Images/Wall Art Photo Pricing Menu List Frame.png";
+import wall from "@/components/Images/SkillCode .jpg";
 import yellow from "@/components/Images/Yellow & Brown 3D We Are Hiring Poster.jpg";
-import mbesi from "@/components/Images/Genevive Mbesi-logos_black.png";
+import mbesi from "@/components/Images/NewsLetter.jpg";
 import genny from "@/components/Images/Genevive Mbesi-logos.jpg";
 
 const Graphics: React.FC = () => {
@@ -27,7 +27,7 @@ const Graphics: React.FC = () => {
         <h2 className="text-4xl font-extrabold mb-4">Graphics</h2>
         <p className="text-lg mb-8">
           For all your{" "}
-          <span className="font-semibold text-yellow-400">
+          <span className="font-semibold ">
             posters, logos, brochures, and flyers
           </span>
         </p>
