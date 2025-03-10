@@ -6,7 +6,7 @@ const Skills = React.lazy(() => import("./Skills/page"));
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full bg-black">
-      {/* Background Image using CSS */}
+    
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-60 pointer-events-none"
         style={{ backgroundImage: `url(${cover.src})` }} 
@@ -27,7 +27,7 @@ export default function Home() {
       {/* Skills Section */}
       <div className="relative z-10 py-16">
         <div className="container mx-auto px-6">
-          {/* Suspense for Lazy Loading Skills */}
+         
           <Suspense fallback={<div className="text-white text-center">Loading Skills...</div>}>
             <Skills />
           </Suspense>

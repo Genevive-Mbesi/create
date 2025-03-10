@@ -95,8 +95,9 @@ const Web: React.FC = () => {
                   src={clip}
                   alt={project.title}
                   layout="fill"
+                  priority
+                  
                   style={{ objectFit: "cover" }}
-                  className="rounded-t-2xl"
                 />
               </div>
 
