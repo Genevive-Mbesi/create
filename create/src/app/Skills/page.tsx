@@ -6,16 +6,21 @@ import socials from "@/components/Images/social media.jpg";
 import seo from "@/components/Images/seo.jpg";
 import webmgt from "@/components/Images/webmgt.jpg";
 import graphic from "@/components/Images/graphic.jpg";
+import Slide from "@/components/Slide";
 
 const Skills: React.FC = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      
       <div className="max-w-7xl mx-auto text-center">
+        <Slide>
         <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
           My Skills
         </h2>
+        </Slide>
 
         {/* Image Grid */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           <div className="w-full">
             <a href="/webdev">

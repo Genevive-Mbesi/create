@@ -4,6 +4,8 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import cover from "@/components/Images/cover.jpg";
 import React, { useState } from "react";
+import Slide from "@/components/Slide";
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -63,6 +65,7 @@ const Contact: React.FC = () => {
         priority
         className="absolute top-0 left-0 z-[-1] "
       />
+      <Slide>
       <div className="max-w-2xl  bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="grid md:grid-cols-2">
           {/* Contact Form */}
@@ -163,8 +166,10 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
+      </Slide>
     </div>
-    <div className="w-full bg-white h-12"></div>
+    
+   
     </div>
   );
 };
