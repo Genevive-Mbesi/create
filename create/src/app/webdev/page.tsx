@@ -92,10 +92,10 @@ const Web: React.FC = () => {
               {/* Project Image */}
               <div className="w-full h-56 relative">
                 <Image
-                  src={project.image}
+                  src={clip}
                   alt={project.title}
                   layout="fill"
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                   className="rounded-t-2xl"
                 />
               </div>
