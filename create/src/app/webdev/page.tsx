@@ -1,11 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import arthub from "@/components/Images/arthub.jpeg";
-import talent from "@/components/Images/talent.jpeg";
-import xo from "@/components/Images/xo.png";
-import portfolio from "@/components/Images/Portfolio.jpeg";
-import creative from "@/components/Images/creative.jpeg";
-import commerce from "@/components/Images/commerce.jpeg";
+import clip from "@/components/Images/Clip.jpg";
 import { AiFillGithub } from "react-icons/ai";
 import cover from "@/components/Images/cover.jpg";
 
@@ -14,39 +9,38 @@ const projects = [
     id: 1,
     title: "Talent",
     description:
-      "A simple and professional company website portfolio set up to help local talent secure international job opportunities through .",
-    image: talent,
+      "A simple and professional company website portfolio set up to help local talent secure international job opportunities.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/Talent-Frontiers-Solution",
     live: "https://talent--frontiers--solution.vercel.app",
-    type: "Proffessional Website Portfolio",
+    type: "Professional Website Portfolio",
   },
   {
     id: 2,
     title: "ArtHub_Ke",
     description:
-      "ArtHub_Ke website is committed to presenting a curated selection of art services and products available for purchase. Developed using React and styled with Tailwind CSS to ensure a seamless and visually appealing experience for customers.",
-    image: arthub,
+      "A curated selection of art services and products available for purchase. Developed using React and styled with Tailwind CSS.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/MbesiArt",
     live: "https://arthubke.vercel.app",
     type: "Product Catalog",
   },
- 
   {
     id: 3,
     title: "React Auth App",
     description:
-      "React application featuring authentication, a connect-three game, and responsive design. Developed using React.js, Tailwind CSS, and Firebase for authentication.",
-    image: xo,
+      "React app featuring authentication, a connect-three game, and responsive design using Firebase.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/React-auth-app",
     live: "https://react-auth-app-genevivembesis-projects.vercel.app/",
-    type: "React xxx-ooo Game",
+    type: "React XXX-OOO Game",
   },
   {
     id: 4,
     title: "E-commerce Platform",
     description:
-      "Full-stack e-commerce application featuring admin authentication, product listings, secure payments with Stripe, order management, and responsive design. Built using Next.js (TypeScript), styled with Tailwind CSS and ShadCN, and Prisma for database management.",
-    image: commerce,
+      "Full-stack e-commerce platform with admin authentication, product listings, secure payments with Stripe, and order management.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/commerce",
     live: "https://mbesi-e-commerce.onrender.com",
     type: "E-commerce Website",
@@ -55,8 +49,8 @@ const projects = [
     id: 5,
     title: "Portfolio",
     description:
-      "Personal portfolio developed using React and styled with Tailwind CSS to provide a seamless and visually appealing user experience.",
-    image: portfolio,
+      "Personal portfolio developed using React and styled with Tailwind CSS for a seamless user experience.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/Portfolio",
     live: "https://mbesi.vercel.app",
     type: "Website Portfolio",
@@ -65,12 +59,11 @@ const projects = [
     id: 6,
     title: "Creative Portfolio",
     description:
-      "This website has been developed and designed using Next.js and Tailwind CSS to show case my creative ability in design and web development.",
-    image: creative,
+      "Designed with Next.js and Tailwind CSS to showcase my creative ability in design and web development.",
+    image: clip,
     github: "https://github.com/Genevive-Mbesi/create",
     live: "https://creativembesi.vercel.app",
     type: "Creative Portfolio",
-    
   },
 ];
 
@@ -135,7 +128,7 @@ const Web: React.FC = () => {
                     </a>
                   ) : (
                     <span className="px-4 py-2 text-sm font-semibold text-gray-400 bg-gray-700 rounded-lg shadow-md">
-                      {project.status }
+                      Not Available
                     </span>
                   )}
                 </div>
