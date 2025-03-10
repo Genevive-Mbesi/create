@@ -11,13 +11,13 @@ import Slide from "@/components/Slide";
 const Skills: React.FC = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      
+       <Slide>
       <div className="max-w-7xl mx-auto text-center">
-        <Slide>
+       
         <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
           My Skills
         </h2>
-        </Slide>
+       
 
         {/* Image Grid */}
        
@@ -125,6 +125,7 @@ const Skills: React.FC = () => {
           </div>
         </div>
       </div>
+      </Slide>
     </div>
   );
 };

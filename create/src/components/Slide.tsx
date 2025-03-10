@@ -1,22 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+
+const slideVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
 
 const Slide = ({ children }: { children: React.ReactNode }) => {
-  const slideVariants = useMemo(
-    () => ({
-      hidden: { opacity: 0, y: 50 },
-      visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-    }),
-    []
-  );
-
-  return (
+  return (    
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }} // Change "once" to true
+      viewport={{ once: false, amount: 0.2 }}
       variants={slideVariants}
     >
       {children}

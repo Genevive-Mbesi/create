@@ -10,6 +10,7 @@ import wall from "@/components/Images/SkillCode .jpg";
 import yellow from "@/components/Images/Yellow & Brown 3D We Are Hiring Poster.jpg";
 import mbesi from "@/components/Images/NewsLetter.jpg";
 import genny from "@/components/Images/Genevive Mbesi-logos.jpg";
+import Slide from "@/components/Slide";
 
 const Graphics: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const Graphics: React.FC = () => {
         </p>
 
         {/* Image Grid */}
+        <Slide>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[yellow, orange, mbesi, genny, screenshot, screen, one, two, wall].map(
             (img, index) => (
@@ -49,6 +51,7 @@ const Graphics: React.FC = () => {
             )
           )}
         </div>
+        </Slide>
       </div>
     </div>
   );
