@@ -35,18 +35,9 @@ const projects = [
     live: "https://react-auth-app-genevivembesis-projects.vercel.app/",
     type: "React XXX-OOO Game",
   },
+  
   {
     id: 4,
-    title: "E-commerce Platform",
-    description:
-      "Full-stack e-commerce platform with admin authentication, product listings, secure payments with Stripe, and order management.",
-    image: clip,
-    github: "https://github.com/Genevive-Mbesi/commerce",
-    live: "https://mbesi-e-commerce.onrender.com",
-    type: "E-commerce Website",
-  },
-  {
-    id: 5,
     title: "Portfolio",
     description:
       "Personal portfolio developed using React and styled with Tailwind CSS for a seamless user experience.",
@@ -56,7 +47,7 @@ const projects = [
     type: "Website Portfolio",
   },
   {
-    id: 6,
+    id: 5,
     title: "Creative Portfolio",
     description:
       "Designed with Next.js and Tailwind CSS to showcase my creative ability in design and web development.",
@@ -64,6 +55,16 @@ const projects = [
     github: "https://github.com/Genevive-Mbesi/create",
     live: "https://creativembesi.vercel.app",
     type: "Creative Portfolio",
+  },
+  {
+    id: 6,
+    title: "E-commerce Platform",
+    description:
+      "Full-stack e-commerce platform with admin authentication, product listings, secure payments with Stripe, and order management.",
+    image: clip,
+    github: "https://github.com/Genevive-Mbesi/commerce",
+    live: "https://mbesi-e-commerce.onrender.com",
+    type: "E-commerce Website",
   },
 ];
 
