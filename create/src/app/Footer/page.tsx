@@ -9,12 +9,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h2 className="text-xl font-semibold text-white mb-4">About Me</h2>
             <p className="text-sm">
-              I am Genevive Mbesi, a creative professional specializing in
-              turning ideas into visually captivating designs. Collaborate with
-              me to bring your vision to life! This Portfolio is built entirely
-              on my expertise from the design to the last line of code.
+               This Portfolio is built entirely
+              on my expertise from the design to the last line of code!
             </p>
           </div>
           <div>
