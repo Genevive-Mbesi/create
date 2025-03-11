@@ -3,18 +3,22 @@ import cover from "@/components/Images/cover.jpg";
 
 const VideoDisplay: React.FC = () => {
   return (
+<div>
+    <div className=" pt-4 items-center" >
+    <h2 className="text-3xl font-bold  text-center mb-4">
+          Visual Narratives
+       </h2> 
+       </div>
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed px-4"
       style={{
         backgroundImage: `url(${cover.src})`,
       }}
     >
+     
       {/* Glassmorphism Effect Container */}
-      <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-lg shadow-lg max-w-3xl w-full flex flex-col items-center">
-        <h2 className="text-3xl font-bold text-white text-center mb-4">
-          Sample Video
-        </h2>
-
+      <div className="   p-6  max-w-3xl w-full flex flex-col items-center">
+        
         {/* Video Container */}
         <div className="relative w-full max-w-lg overflow-hidden rounded-lg shadow-xl border border-gray-400">
           <video
@@ -27,6 +31,7 @@ const VideoDisplay: React.FC = () => {
         </div>
       </div>
     </div>
+    </div> 
   );
 };
 
