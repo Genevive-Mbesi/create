@@ -22,7 +22,7 @@ export default function About() {
             className="w-40 h-40 rounded-full border-4 border-black shadow-lg" 
           />
           <p className="text-lg text-gray-700 leading-relaxed animate-fade-in">
-            I’m <span className="font-bold text-black">Genevive Mbesi</span>, a Digital Creative & Web Development Technophile. With a love for clean, visually appealing designs, I craft seamless user experiences. My passion for <span className="text-black font-semibold">graphic design, web design, Web development, and videography</span> allows me to tell compelling stories through visuals. Whether you need  a website, brand identity, or dynamic content, I bring creativity, precision, and a touch of magic to everything I create.
+            I’m <span className="font-bold text-black">Genevive Mbesi</span>, a Digital Creative & Web Development Technophile with a love for clean, visually appealing designs, I craft seamless user experiences. My passion for <span className="text-black font-semibold">graphic design, web design, Web development, and videography</span> allows me to tell compelling stories through visuals. Whether you need  a website, brand identity, or dynamic content, I bring creativity, precision, and a touch of magic to everything I create.
           </p>
         </div>
       </div>
