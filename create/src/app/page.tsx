@@ -1,5 +1,6 @@
 import cover from "@/components/Images/cover.jpg";
 import Skills from "@/app/Skills/page"
+import About from "@/app/About/page"
 
 export default function Home() {
   return (
@@ -13,15 +14,14 @@ export default function Home() {
       {/* Content Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6 backdrop-blur-sm">
         <h1 className="text-6xl font-extrabold text-white drop-shadow-lg animate-fade-in">
-          Creative Portfolio
+         Genevive Mbesi <br/> Creative Portfolio
         </h1>
         <p className="text-lg text-gray-200 mt-4 max-w-2xl leading-relaxed animate-fade-in">
-          Hello there! I am <span className="font-bold">Genevive Mbesi</span>, a creative 
-          professional passionate about turning ideas into visually captivating designs.
-          Expect a blend of flair and creativity in every project I take on.
+        Bringing ideas to life through compelling design, web experiences, and digital storytelling.
         </p>
       </div>
       <div className="relative z-10 py-16">
+            <About/>
             <Skills />
         </div>
     </div>
