@@ -40,6 +40,13 @@ const Navbar: React.FC = () => {
               Home
             </Link>
             <Link
+              href="/About"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              aria-label="View Projects"
+            >
+              About
+            </Link> 
+            <Link
               href="/Skills"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
               aria-label="View Projects"
@@ -90,6 +97,13 @@ const Navbar: React.FC = () => {
             aria-label="Navigate to Home"
           >
             Home
+          </Link>
+          <Link
+            href="/About"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            aria-label="View Projects"
+          >
+            About
           </Link>
           <Link
             href="/Skills"

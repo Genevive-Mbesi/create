@@ -22,7 +22,7 @@ const Graphics: React.FC = () => {
     >
       <div className="absolute inset-0 bg-black/70"></div>
       <div className="relative max-w-7xl mx-auto text-center text-white">
-        <h2 className="text-4xl font-extrabold mb-4">Graphics</h2>
+        <h2 className="text-4xl font-extrabold mb-4"> Graphics</h2>
         <p className="text-lg mb-8 font-semibold">
             posters, logos, brochures, and flyers
         </p>
