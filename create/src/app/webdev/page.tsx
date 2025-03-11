@@ -79,7 +79,7 @@ const Web: React.FC = () => {
       {/* Glassmorphism Effect Container */}
       <div className="w-full min-h-screen flex flex-col items-center justify-center bg-black/60 backdrop-blur-lg p-10">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center">
-          My Projects
+          My Websites
         </h1>
 
         {/* Grid Layout */}
