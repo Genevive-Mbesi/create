@@ -20,20 +20,12 @@ const Graphics: React.FC = () => {
         backgroundImage: `url(${cover.src})`,
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
-
-      {/* Content */}
       <div className="relative max-w-7xl mx-auto text-center text-white">
         <h2 className="text-4xl font-extrabold mb-4">Graphics</h2>
-        <p className="text-lg mb-8">
-          For all your{" "}
-          <span className="font-semibold ">
+        <p className="text-lg mb-8 font-semibold">
             posters, logos, brochures, and flyers
-          </span>
         </p>
-
-        {/* Image Grid */}
         <Slide>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[yellow, orange, mbesi, genny, screenshot, screen, one, two, wall].map(
