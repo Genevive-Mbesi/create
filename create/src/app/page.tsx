@@ -1,7 +1,5 @@
-import React, { Suspense } from "react";
 import cover from "@/components/Images/cover.jpg";
-
-const Skills = React.lazy(() => import("./Skills/page"));
+import Skills from "@/app/Skills/page"
 
 export default function Home() {
   return (
@@ -23,16 +21,9 @@ export default function Home() {
           Expect a blend of flair and creativity in every project I take on.
         </p>
       </div>
-
-      {/* Skills Section */}
       <div className="relative z-10 py-16">
-        <div className="container mx-auto px-6">
-         
-          <Suspense fallback={<div className="text-white text-center">Loading Skills...</div>}>
             <Skills />
-          </Suspense>
         </div>
-      </div>
     </div>
   );
 }
