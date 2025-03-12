@@ -6,9 +6,8 @@ export default function About() {
     <div className="relative min-h-screen w-full bg-white text-black flex flex-col items-center justify-center px-6">
       {/* Background Design */}
       <div className="absolute inset-0 bg-gray-100 opacity-50 pointer-events-none"></div>
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <h1 className="text-[10rem] font-extrabold text-gray-200 opacity-40">CREATIVE</h1>
-      </div>
+     
+
       
       {/* About Section */}
       <div className="relative z-10 text-center max-w-3xl">
