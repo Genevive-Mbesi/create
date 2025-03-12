@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
       <div className="max-w-7xl mx-auto text-center">
         
         <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
-          My Skills
+          View Skills
         </h2>
         
         {/* Image Grid */}
