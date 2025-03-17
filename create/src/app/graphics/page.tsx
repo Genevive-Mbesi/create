@@ -16,7 +16,7 @@ const images = [
   { src: genny, desc: "Logo Design", top: "30%", left: "70%" },
   { src: screenshot, desc: "Information Flyer", top: "40%", left: "10%" },
   { src: screen, desc: "Company Bulletin", top: "50%", left: "50%" },
-  { src: one, desc: "Creative Designs", top: "60%", left: "85%" },
+  { src: one, desc: "Creative Designs", top: "60%", left: "86%" },
   { src: two, desc: "Company Brochure", top: "70%", left: "25%" },
   { src: wall, desc: "Profile Cover", top: "80%", left: "60%" },
 ];
