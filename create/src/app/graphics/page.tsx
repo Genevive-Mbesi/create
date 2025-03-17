@@ -6,7 +6,7 @@ import mbesi from "@/components/Images/NewsLetter.jpg";
 import genny from "@/components/Images/Genevive Mbesi-logos.jpg";
 import screenshot from "@/components/Images/Screenshot 2024-11-19 213322.png";
 import screen from "@/components/Images/Screenshot 2024-11-19 213303.png";
-import one from "@/components/Images/Mbesi Avartar.jpeg"
+import one from "@/components/Images/designs (1).png"
 import two from "@/components/Images/2.jpg";
 import wall from "@/components/Images/SkillCode .jpg";
 
@@ -16,7 +16,7 @@ const images = [
   { src: genny, desc: "Logo Design", top: "30%", left: "70%" },
   { src: screenshot, desc: "Information Flyer", top: "40%", left: "10%" },
   { src: screen, desc: "Company Bulletin", top: "50%", left: "50%" },
-  { src: one, desc: "Avatar", top: "60%", left: "85%" },
+  { src: one, desc: "Creative Designs", top: "60%", left: "85%" },
   { src: two, desc: "Company Brochure", top: "70%", left: "25%" },
   { src: wall, desc: "Profile Cover", top: "80%", left: "60%" },
 ];
