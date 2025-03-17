@@ -34,28 +34,28 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex space-x-4">
             <Link
               href="/"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md font-bold text-sm  transition"
               aria-label="Navigate to Home"
             >
               Home
             </Link>
             <Link
               href="/About"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-bold transition"
               aria-label="View Projects"
             >
               About
             </Link> 
             <Link
               href="/Skills"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-bold transition"
               aria-label="View Projects"
             >
               Projects
             </Link>
             <Link
               href="/contact"
-              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
+              className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-bold transition"
               aria-label="Contact Page"
             >
               Contact
@@ -93,28 +93,28 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-gray-50">
           <Link
             href="/"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-bold transition"
             aria-label="Navigate to Home"
           >
             Home
           </Link>
           <Link
             href="/About"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-bold transition"
             aria-label="View Projects"
           >
             About
           </Link>
           <Link
             href="/Skills"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-bold transition"
             aria-label="View Projects"
           >
             Projects
           </Link>
           <Link
             href="/contact"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
+            className="block px-4 py-2 hover:bg-gray-100 text-sm font-bold transition"
             aria-label="Contact Page"
           >
             Contact
