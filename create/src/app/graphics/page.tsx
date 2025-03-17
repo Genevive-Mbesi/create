@@ -6,7 +6,7 @@ import mbesi from "@/components/Images/NewsLetter.jpg";
 import genny from "@/components/Images/Genevive Mbesi-logos.jpg";
 import screenshot from "@/components/Images/Screenshot 2024-11-19 213322.png";
 import screen from "@/components/Images/Screenshot 2024-11-19 213303.png";
-import one from "@/components/Images/Mbesi Avartar.png.jpg"
+import one from "@/components/Images/Mbesi Avartar.jpg"
 import two from "@/components/Images/2.jpg";
 import wall from "@/components/Images/SkillCode .jpg";
 
