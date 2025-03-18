@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import clip from "@/components/Images/Clip.jpg";
 import { AiFillGithub } from "react-icons/ai";
-import cover from "@/components/Images/cover.jpg";
+
 
 const projects = [
   {
@@ -33,7 +33,7 @@ const projects = [
     image: clip,
     github: "https://github.com/Genevive-Mbesi/React-auth-app",
     live: "https://react-auth-app-genevivembesis-projects.vercel.app/",
-    type: "React XXX-OOO Game",
+    type: "React Game",
   },
   
   {
@@ -71,15 +71,13 @@ const projects = [
 const Web: React.FC = () => {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center text-white"
-      style={{
-        backgroundImage: `url(${cover.src})`,
-      }}
+      className="min-h-screen flex flex-col items-center justify-center bg-white bg-center text-white"
+      
     >
       {/* Glassmorphism Effect Container */}
-      <div className="w-full min-h-screen flex flex-col items-center justify-center bg-black/60 backdrop-blur-lg p-10">
-        <h1 className="text-4xl font-extrabold text-white mb-8 text-center">
-          My Websites
+      <div className="w-full min-h-screen flex flex-col items-center justify-center  backdrop-blur-lg p-10">
+        <h1 className="text-4xl font-extrabold text-black mb-8 text-center">
+          Featured Websites
         </h1>
 
         {/* Grid Layout */}
@@ -109,13 +107,13 @@ const Web: React.FC = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition"
+                    className="text-black  transition"
                   >
                     <AiFillGithub className="text-3xl" />
                   </a>
                 </h2>
-                <p className="text-gray-400 text-sm">{project.type}</p>
-                <p className="text-gray-300 mt-2">{project.description}</p>
+                <p className="text-black font-medium ">{project.type}</p>
+                <p className="text-gray-800 mt-2">{project.description}</p>
 
                 {/* Action Buttons */}
                 <div className="mt-4 flex justify-end">
