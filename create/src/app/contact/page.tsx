@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
           {/* Contact Information */}
           <div className="bg-neutral-950 text-white p-8 space-y-6">
             <h3 className="text-2xl font-bold">Contact Information</h3>
-            <p className="text-neutral-200">Feel free to reach out via any of the methods below:</p>
+            <p className="text-neutral-200">Feel free to reach out via:</p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <a href="mailto:genmbesi@gmail.com">
@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <a
-                  href="https://wa.me/+254770209753"
+                  href="https://wa.me/+254740528336"
                   target="_blank"
                   rel="noreferrer"
                 >

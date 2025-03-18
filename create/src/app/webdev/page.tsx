@@ -89,7 +89,7 @@ const Web: React.FC = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="relative bg-black backdrop-blur-md  border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
+              className="relative bg-black backdrop-blur-md  border-white rounded-2xl shadow-lg overflow-hidden  transform transition duration-300 hover:scale-105"
             >
               {/* Project Image */}
               <div className="w-full h-56 relative">
