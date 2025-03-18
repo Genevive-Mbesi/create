@@ -112,7 +112,7 @@ const Web: React.FC = () => {
                     <AiFillGithub className="text-3xl" />
                   </a>
                 </h2>
-                <p className="text-black font-medium ">{project.type}</p>
+                <p className="text-black font-bold ">{project.type}</p>
                 <p className="text-gray-800 mt-2">{project.description}</p>
 
                 {/* Action Buttons */}
