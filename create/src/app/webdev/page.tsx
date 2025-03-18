@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import clip from "@/components/Images/Clip.jpg";
 import { AiFillGithub } from "react-icons/ai";
 import talent from "@/components/Images/talent.jpeg"
 import game from "@/components/Images/tictac.jpeg"
 import art from "@/components/Images/artheart.jpeg"
-import girl from "@/components/Images/Portfolio (1).jpeg"
+import girl from "@/components/Images/Portfolio.jpeg"
 import creative from "@/components/Images/creative.jpeg"
 import commerce from "@/components/Images/commerce (1).jpeg"
 
