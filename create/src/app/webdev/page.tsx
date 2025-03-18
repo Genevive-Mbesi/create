@@ -2,7 +2,12 @@ import React from "react";
 import Image from "next/image";
 import clip from "@/components/Images/Clip.jpg";
 import { AiFillGithub } from "react-icons/ai";
-
+import talent from "@/components/Images/talent.jpeg"
+import game from "@/components/Images/tictac.jpeg"
+import art from "@/components/Images/artheart.jpeg"
+import girl from "@/components/Images/Portfolio (1).jpeg"
+import creative from "@/components/Images/creative.jpeg"
+import commerce from "@/components/Images/commerce (1).jpeg"
 
 const projects = [
   {
@@ -10,7 +15,7 @@ const projects = [
     title: "Talent",
     description:
       "A simple and professional company website portfolio set up to help local talent secure international job opportunities.",
-    image: clip,
+    image: talent,
     github: "https://github.com/Genevive-Mbesi/Talent-Frontiers-Solution",
     live: "https://talent--frontiers--solution.vercel.app",
     type: "Professional Website Portfolio",
@@ -20,7 +25,7 @@ const projects = [
     title: "ArtHub_Ke",
     description:
       "A curated selection of art services and products available for purchase. Developed using React and styled with Tailwind CSS.",
-    image: clip,
+    image: art,
     github: "https://github.com/Genevive-Mbesi/MbesiArt",
     live: "https://arthubke.vercel.app",
     type: "Product Catalog",
@@ -30,7 +35,7 @@ const projects = [
     title: "React Auth App",
     description:
       "React app featuring authentication, a connect-three game, and responsive design using Firebase.",
-    image: clip,
+    image: game,
     github: "https://github.com/Genevive-Mbesi/React-auth-app",
     live: "https://react-auth-app-genevivembesis-projects.vercel.app/",
     type: "React Game",
@@ -41,7 +46,7 @@ const projects = [
     title: "Portfolio",
     description:
       "Personal portfolio developed using React and styled with Tailwind CSS for a seamless user experience.",
-    image: clip,
+    image: girl,
     github: "https://github.com/Genevive-Mbesi/Portfolio",
     live: "https://mbesi.vercel.app",
     type: "Website Portfolio",
@@ -51,7 +56,7 @@ const projects = [
     title: "Creative Portfolio",
     description:
       "Designed with Next.js and Tailwind CSS to showcase my creative ability in design and web development.",
-    image: clip,
+    image: creative,
     github: "https://github.com/Genevive-Mbesi/create",
     live: "https://creativembesi.vercel.app",
     type: "Creative Portfolio",
@@ -61,7 +66,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Full-stack e-commerce platform with admin authentication, product listings, secure payments with Stripe, and order management.",
-    image: clip,
+    image: commerce,
     github: "https://github.com/Genevive-Mbesi/commerce",
     live: "https://mbesi-e-commerce.onrender.com",
     type: "E-commerce Website",
@@ -85,12 +90,12 @@ const Web: React.FC = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
+              className="relative bg-black backdrop-blur-md  border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
             >
               {/* Project Image */}
               <div className="w-full h-56 relative">
                 <Image
-                  src={clip}
+                  src={project.image}
                   alt={project.title}
                   layout="fill"
                   priority
@@ -107,13 +112,13 @@ const Web: React.FC = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black  transition"
+                    className="text-white  transition"
                   >
                     <AiFillGithub className="text-3xl" />
                   </a>
                 </h2>
-                <p className="text-black font-bold ">{project.type}</p>
-                <p className="text-gray-800 mt-2">{project.description}</p>
+                <p className="text-gray-300 font-bold ">{project.type}</p>
+                <p className="text-white-800 mt-2">{project.description}</p>
 
                 {/* Action Buttons */}
                 <div className="mt-4 flex justify-end">
