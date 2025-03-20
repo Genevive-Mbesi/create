@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
             { src: webmgt, title: "Web Development", link: "/webdev" },
             { src: graphic, title: "Graphic Design", link: "/graphics" },
             { src: video, title: "Videography", link: "/videography" },
-            { src: web, title: "Web Design", link: "/graphics" },
+            { src: web, title: "Web Design", link: "#" },
             { src: socials, title: "Social Media Management", link: "#" },
             { src: seo, title: "Search Engine Optimization", link: "#" }
           ].map((skill, index) => (
