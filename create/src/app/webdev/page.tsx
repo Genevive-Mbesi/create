@@ -1,145 +1,134 @@
 import React from "react";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
-import talent from "@/components/Images/talent.jpeg"
-import game from "@/components/Images/tictac.jpeg"
-import art from "@/components/Images/artheart.jpeg"
-import girl from "@/components/Images/Portfolio.jpeg"
-import creative from "@/components/Images/creative.jpeg"
-import commerce from "@/components/Images/commerce (1).jpeg"
+import talent from "@/components/Images/talent.jpeg";
+import art from "@/components/Images/artheart.jpeg";
+import game from "@/components/Images/tictac.jpeg";
+import creative from "@/components/Images/creative.jpeg";
+import commerce from "@/components/Images/commerce.jpeg";
+import portfolio from "@/components/Images/Portfolio.jpeg";
 
 const projects = [
   {
-    id: 1,
-    title: "Talent",
-    description:
-      "A simple and professional company website portfolio set up to help local talent secure international job opportunities.",
+    title: "Company Website Portfolio",
     image: talent,
     github: "https://github.com/Genevive-Mbesi/Talent-Frontiers-Solution",
     live: "https://talent--frontiers--solution.vercel.app",
-    type: "Professional Website Portfolio",
+    description:
+      "A professionally crafted corporate portfolio that enhances brand presence and provides a structured digital showcase.",
+    tech: "Next.js, TypeScript, Tailwind CSS, Shadcn UI, and Resend.",
   },
   {
-    id: 2,
     title: "ArtHub_Ke",
-    description:
-      "A curated selection of art services and products available for purchase. Developed using React and styled with Tailwind CSS.",
     image: art,
     github: "https://github.com/Genevive-Mbesi/MbesiArt",
     live: "https://arthubke.vercel.app",
-    type: "Product Catalog",
+    description:
+      "A digital marketplace for curated art collections and creative services, providing artists a seamless online storefront.",
+    tech: "React and Tailwind CSS.",
   },
   {
-    id: 3,
     title: "React Auth App",
-    description:
-      "React app featuring authentication, a connect-three game, and responsive design using Firebase.",
     image: game,
     github: "https://github.com/Genevive-Mbesi/React-auth-app",
     live: "https://react-auth-app-genevivembesis-projects.vercel.app/",
-    type: "React Game",
-  },
-  
-  {
-    id: 4,
-    title: "Portfolio",
     description:
-      "Personal portfolio developed using React and styled with Tailwind CSS for a seamless user experience.",
-    image: girl,
-    github: "https://github.com/Genevive-Mbesi/Portfolio",
-    live: "https://mbesi.vercel.app",
-    type: "Website Portfolio",
+      "A React authentication system powered by Firebase, integrated with a fun, interactive Tic-Tac-Toe game.",
+    tech: "React.js, Firebase, and Tailwind CSS.",
   },
   {
-    id: 5,
     title: "Creative Portfolio",
-    description:
-      "Designed with Next.js and Tailwind CSS to showcase my creative ability in design and web development.",
     image: creative,
     github: "https://github.com/Genevive-Mbesi/create",
     live: "https://creativembesi.vercel.app",
-    type: "Creative Portfolio",
+    description:
+      "A sleek and modern portfolio showcasing digital creativity and design expertise, crafted with a strong UI/UX approach.",
+    tech: "Next.js and Tailwind CSS.",
   },
   {
-    id: 6,
     title: "E-commerce Platform",
-    description:
-      "Full-stack e-commerce platform with admin authentication, product listings, secure payments with Stripe, and order management.",
     image: commerce,
     github: "https://github.com/Genevive-Mbesi/commerce",
     live: "https://mbesi-e-commerce.onrender.com",
-    type: "E-commerce Website",
+    description:
+      "A full-stack e-commerce platform with admin authentication, Stripe integration, and database management with Prisma.",
+    tech: "Next.js (TypeScript), Tailwind CSS, and Shadcn UI.",
+  },
+  {
+    title: "Portfolio Website",
+    image: portfolio,
+    github: "https://github.com/Genevive-Mbesi/Portfolio",
+    live: "https://mbesi.vercel.app",
+    description:
+      "A structured and elegant personal portfolio, built to effectively showcase skills, projects, and professional expertise.",
+    tech: "React and Tailwind CSS.",
   },
 ];
 
 const Web: React.FC = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center bg-white bg-center text-white"
-      
-    >
-      {/* Glassmorphism Effect Container */}
-      <div className="w-full min-h-screen flex flex-col items-center justify-center  backdrop-blur-lg p-10">
-        <h1 className="text-4xl font-extrabold text-black mb-8 text-center">
-          Featured Websites
-        </h1>
+    <div className="min-h-screen flex flex-col items-center bg-white text-black p-10">
+      <h1 className="text-4xl font-extrabold mb-10 text-center">
+        Featured Websites
+      </h1>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="relative bg-black backdrop-blur-md  border-white rounded-2xl shadow-lg overflow-hidden  transform transition duration-300 hover:scale-105"
-            >
-              {/* Project Image */}
-              <div className="w-full h-56 relative">
+      <div className="flex flex-col gap-12 w-full max-w-6xl">
+        {projects.map((project, index) => (
+          <div
+            key={project.title}
+            className={`flex flex-col md:flex-row items-center gap-8 ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
+          >
+            {/* Project Image with Black Border */}
+            <div className="w-full md:w-1/3">
+              <div className="border-4 border-black rounded-lg overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
-                  priority
-                  
-                  style={{ objectFit: "cover" }}
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
                 />
               </div>
+            </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h2 className="text-2xl font-semibold flex justify-between items-center">
-                  {project.title}
+            {/* Project Details */}
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-3xl font-bold flex items-center justify-between">
+                {project.title}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black transition hover:text-gray-600"
+                >
+                  <AiFillGithub className="text-3xl" />
+                </a>
+              </h2>
+              <p className="text-gray-600 font-semibold">{project.tech}</p>
+              <p className="mt-4 text-gray-800">{project.description}</p>
+
+              {/* Action Button */}
+              <div className="mt-6">
+                {project.live ? (
                   <a
-                    href={project.github}
+                    href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white  transition"
+                    className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-md hover:from-pink-500 hover:to-purple-500 transition"
                   >
-                    <AiFillGithub className="text-3xl" />
+                    View Live
                   </a>
-                </h2>
-                <p className="text-gray-300 font-bold ">{project.type}</p>
-                <p className="text-white-800 mt-2">{project.description}</p>
-
-                {/* Action Buttons */}
-                <div className="mt-4 flex justify-end">
-                  {project.live ? (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg shadow-md hover:from-pink-500 hover:to-purple-500 transition"
-                    >
-                      View Live
-                    </a>
-                  ) : (
-                    <span className="px-4 py-2 text-sm font-semibold text-gray-400 bg-gray-700 rounded-lg shadow-md">
-                      Not Available
-                    </span>
-                  )}
-                </div>
+                ) : (
+                  <span className="px-6 py-2 text-lg font-semibold text-gray-400 bg-gray-700 rounded-lg shadow-md">
+                    Not Available
+                  </span>
+                )}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
