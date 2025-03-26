@@ -82,7 +82,8 @@ const Web: React.FC = () => {
           >
             {/* Project Image with Black Border */}
             <div className="w-full md:w-1/3">
-              <div className="border-4 border-black rounded-lg overflow-hidden">
+            <div className="border border-gray-400 p-4 rounded-lg hover:border-gray-600 transition duration-300 hover:shadow-xl hover:scale-105">
+              <div className="border-8 border-black rounded-lg p-2 bg-gray-900 shadow-md">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -90,6 +91,7 @@ const Web: React.FC = () => {
                   height={400}
                   className="w-full h-auto"
                 />
+              </div>
               </div>
             </div>
 
